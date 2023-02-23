@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>코딩네컷</title>
+    <style>
+      /* 이서윤체 폰트 적용을 위한 코드 */
+      @font-face {
+        font-family: 'Cafe24ClassicType-Regular';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Cafe24ClassicType-Regular.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+      /* body태그 자체에 css 요소 부여 */
+      body {
+        font-family: "Cafe24ClassicType-Regular";
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        background-image: url("./background.png");
+      }
+
+      .container {
+        width: 380px;
+        background-color: #ff9d73;
+        height: 100%;
+      }
+
+      .photos {
+        margin-top: 38px;
+      }
+
+      .photo-frame {
+        background-color: white;
+        margin: 15px 20px;
+        height: 350px;
+        background-size: cover;
+        position: relative;
+      }
+
+      /* 하단 영역 스타일링 */
+      .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .f-title {
+        font-size: 25px;
+        font-weight: 900;
+        color: white;
+      }
+      .f-date {
+        font-size: 17px;
+        font-weight: 500;
+        color: white;
+      }
+
+      .f-me {
+        font-size: 14px;
+        font-weight: 500;
+        color: white;
+      }
+
+      #image1 {
+        background-image: url("./imgs/img6.png");
+      }
+
+      #image2 {
+        background-image: url("./imgs/img2.png");
+      }
+
+      #image3 {
+        background-image: url("./imgs/img4.png");
+      }
+
+      #image4 {
+        background-image: url("./imgs/img3.png");
+      }
+
+      #image5 {
+        background-image: url("./imgs/img5.png");
+      }
+
+      .photo-description {
+        color: white;
+        background-color: black;
+        width: fit-content;
+        padding: 0 20px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        position: absolute;
+        bottom: 0;
+        transform: translate(-50%);
+        left: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="photos">
+        <div id="image1" class="photo-frame">
+          <span id="desc1" class="photo-description">
+            학사(진) 박신영
+          </span>
+        </div>
+        <div id="image2" class="photo-frame">
+          <span id="desc2" class="photo-description">
+            🎈고무풍선학과 <br> 학사 박신영
+          </span>
+        </div>
+        <div id="image3" class="photo-frame">
+          <span id="desc3" class="photo-description">
+            💐 꼬츠ㄹ 든<br>학사 박신영
+          </span>
+        </div>
+        <div id="image4" class="photo-frame">
+          <span id="desc4" class="photo-description">
+            신난 박싱싱!
+          </span>
+        </div>
+        <div id="image5" class="photo-frame">
+          <span id="desc5" class="photo-description">
+            7급 박신영
+          </span>
+        </div>
+      </div>
+      <div class="footer">
+        <p class="f-title">👩🏻‍🎓 신영이 졸업 축하해 🎉</p>
+        <p class="f-date">2023.01.23</p>
+        <p class="f-me">create by 세웅</p>
+      </div>
+    </div>
+  </body>
+</html>
